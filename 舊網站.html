@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>第八組-咖啡品牌形象、品牌忠誠度之影響-以路易莎咖啡為例</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB ESSENTIAL -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- MDB PLUGINS -->
+  <link rel="stylesheet" href="plugins/css/all.min.css" />
+  <!-- Custom styles -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    /* Color of the links BEFORE scroll */
+    .navbar-scroll .nav-link,
+    .navbar-scroll .navbar-toggler-icon,
+    .navbar-scroll .navbar-brand {
+      color: #fff;
+    }
+
+    /* Color of the links AFTER scroll */
+    .navbar-scrolled .nav-link,
+    .navbar-scrolled .navbar-toggler-icon,
+    .navbar-scrolled .navbar-brand {
+      color: #fff;
+    }
+
+    /* Color of the navbar AFTER scroll */
+    .navbar-scroll,
+    .navbar-scrolled {
+      background-color: #cbbcb1;
+    }
+
+    .mask-custom {
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand {
+      font-size: 1.75rem;
+      letter-spacing: 3px;
+    }
+
+    body {
+      font-family: "Open Sans", "LXGW WenKai Mono TC", serif;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- === exsample ============================================================= -->
+
+  <!-- navbar Builder -->
+  <!-- https://mdbootstrap.com/docs/standard/tools/builders/navbar/ -->
+  <!-- navbar example -->
+  <!-- https://mdbootstrap.com/docs/standard/navigation/navbar/examples-and-customization/ -->
+
+  <!-- https://mdbootstrap.com/docs/standard/tools/builders/cards -->
+  <!-- https://mdbootstrap.com/docs/standard/components/cards/examples-and-customization/ -->
+
+  <!-- footer Builder -->
+  <!-- https://mdbootstrap.com/docs/standard/tools/builders/footer/ -->
+  <!-- footer Example -->
+  <!-- https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/ -->
+
+  <!--
+    MDB SVG Waves 產生器 https://mdbootstrap.com/docs/standard/tools/design/waves/
+        SVG Waves 產生器 https://getwaves.io
+
+      結構
+      svg.position-absolute > path
+
+      EX:
+      SVG圖形靠左下方,填滿顏色(白色),透明度1
+      <svg class="position-absolute" style="left:0; bottom:-1;" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#fff" fill-opacity="1" d=""> </path>
+      </svg>
+
+      SVG圖形靠左上方,填滿顏色(白色),透明度1
+      <svg class="position-absolute" style="left:0; top:-1;" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#fff" fill-opacity="1" d=""> </path>
+      </svg>
+  -->
+
+  <!--
+  波紋效果 https://mdbootstrap.com/docs/standard/methods/ripple/
+  波紋效果產生器 https://mdbootstrap.com/docs/standard/tools/builders/ripple/
+
+  初始化
+  1.套用至影像 data-mdb-ripple-init
+  <button type="button" class="btn btn-primary btn-lg" data-mdb-ripple-init data-mdb-ripple-color="light">Primary</button>
+
+  2.套用至可點選元素 data-mdb-ripple-init
+  <a data-mdb-ripple-init href="#">
+    <img alt="Los Angeles Skyscrapers" class="img-fluid rounded" src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"/>
+  </a>
+
+
+  顏色 data-mdb-ripple-color
+  1.MDB顏色 data-mdb-ripple-color="primary"
+  2.CSS顏色 data-mdb-ripple-color="red"
+  3.16進制  data-mdb-ripple-color="#c953d6"
+
+  持續時間 data-mdb-ripple-duration
+  1.毫秒  data-mdb-ripple-duration=500ms
+  2.秒    data-mdb-ripple-duration=0.5s
+
+  位置
+  1.從觸摸的位置開始(預設)
+  2.從元素的中心開始 data-mdb-ripple-centered="true"
+
+  邊界
+  1.綁定元素,不會超出邊界(預設)
+  2.不綁定元素,超出邊界 data-mdb-ripple-unbound="true"
+
+
+  半徑 data-mdb-ripple-radius
+  數值以像素表示  data-mdb-ripple-radius="10"
+  -->
+
+
+  <!-- === End exsample ========================================================== -->
+
+
+
+
+
+  <!-- === navbar ============================================================= -->
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <div class="container">
+        <img src="./img/coffee-maker-removebg-preview white.png"> &nbsp &nbsp <a class="navbar-brand" href="#!"> <span style="color: #fff;">COF</span><span
+            style="color: #fff;">FEE</span></a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top" style="color: #fff;">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.buoncaffe.com.tw/blog/posts/coffeebean?srsltid=AfmBOoqzzDvrxJbI-ET1WQkcobJbdK2wt6BkfIhWe4mUvCVrv2QcZGcc" style="color: #fff;">關於</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.ssscafe.com/pages/taiwan-coffee-history" style="color: #fff">咖啡歷史</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://shopee.tw/blog/coffee-beans/" style="color: #fff">咖啡豆</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.accupass.com/event/2501080635497284428270?utm_source=web&utm_medium=search_result_%E8%B3%87%E4%BA%8C%E5%8B%A4&utm_campaign=accu_e_" style="color: #fff;">活動資訊</a>
+            </li>
+            </ul>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="login.php" style="color: #fff;">登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!--Section: Design Block-->
+    <section>
+      <!-- Intro -->
+      <div id="intro" class="bg-image vh-100" style="
+                background-image: url(./img/coffee-1867659_1920.jpg);
+              ">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0);"></div>
+      </div>
+      <!-- Intro -->
+    </section>
+    <!--Section: Design Block-->
+  </header>
+
+  <!-- === End navbar ========================================================== -->
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+<!-- === card horizonal ============================================================= -->
+
+  <div class="container">
+    <div class="row">
+      <div class="card shadow-5-strong mb-3">
+          <div class="row g-0">
+
+              <div class="col-md-4">
+                  <!-- bg-img -->
+                  <div class="bg-image hover-overlay ripple h-100" data-mdb-ripple-init data-mdb-ripple-color="light">
+                      <img class="img-fluid h-100 rounded" src="./img/caffeine-1866758_1280.jpg" alt="提示文字">
+
+                      <!-- mask -->
+                      <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.1);"></div>
+                      </a>
+                  </div><!-- bg-img -->
+              </div>
+
+              <div class="col-md-8">
+                  <div class="card-body">
+                      <h5 class="card-title">咖啡</h5>
+                      <p class="card-text">
+                        咖啡（英語：Coffee）是指咖啡植物的種子即咖啡豆在經過烘焙磨粉後通過沖泡製成的飲料，咖啡亦是世界上流行範圍最為廣泛的飲料之一。未經烘焙的咖啡生豆作為世界上最大的農產品出口物，以及世界上交易量為廣泛的熱帶農產品之一，也是開發中國家出口中最有價值的商品之一。<br>咖啡在人類飲食中的定位近似於茶，人們通常在用餐和社交、閱讀時飲用，亦或是用作提神。<br>咖啡普遍分為兩種：最為普遍的小果咖啡（阿拉比卡）及顆粒較粗且酸味較低而苦味較濃的中果咖啡（羅布斯塔）。
+                      </p>
+
+                  </div>
+                  <div class="card-body d-flex justify-content-end">
+                    <a href="https://zh.wikipedia.org/zh-tw/%E5%92%96%E5%95%A1" class="btn btn-primary btn-lg me-2" role="button">維基百科</a>
+                </div>
+              </div>
+          </div><!-- row -->
+      </div><!-- card -->
+    </div><!-- Row -->
+  </div><!--Container -->
+
+<!-- === End card horizonal ========================================================== -->
+
+
+
+
+
+<br>
+
+
+
+
+
+<!-- === card-grid ============================================================= -->
+
+  <div class="container">
+    <!-- row-cols-1 row-cols-md-2 -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/coffee-7996366 (1).jpg" class="card-img-top"
+            alt="Hollywood Sign on The Hill" />
+          <div class="card-body h-100">
+            <h5 class="card-title">滴漏式咖啡</h5>
+            <p class="card-text">
+              是一種將水注入經烘焙以及研磨的咖啡豆中的沖泡咖啡的方式。水滲過研磨咖啡，吸收其焦油和香氣透過重力作用，流至過濾器的底部。沖泡過的咖啡渣留在過濾器，而溶解的咖啡隨著滴落的水珠掉進例如玻璃瓶或咖啡壺之中。
+            </p>
+          </div>
+    <div class="card-body d-flex justify-content-end">
+        <a href="https://www.youtube.com/watch?v=rGcjhesyiRY&ab_channel=PeiChiang%28%E5%91%88%E5%85%89%E6%94%9D%E5%BD%B1%29" class="btn btn-primary btn-lg me-2" role="button">參考影片</a>
+    </div>
+
+
+        </div><!-- card -->
+      </div><!-- col -->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/coffee-5252372.jpg" class="card-img-top"
+            alt="Palm Springs Road" />
+          <div class="card-body h-100">
+            <h5 class="card-title">手沖咖啡</h5>
+            <p class="card-text">
+經典的Chemex手沖咖啡壺，誕生於1941年，是德國化學家Peter Schlumbohm移居紐約後的一項傑作。這位柏林大學的博士，將他在化學領域的專業知識，巧妙地運用在咖啡器具的設計上。自Chemex接手公司生產以來，這款手沖壺成為咖啡愛好者的首選。 </p>
+          </div>
+    <div class="card-body d-flex justify-content-end">
+        <a href="https://www.youtube.com/watch?v=hh-l69T1wxE&t=2s&ab_channel=%E5%BE%B7%E5%B8%8C%E9%81%94THETA" class="btn btn-primary btn-lg me-2" role="button">參考影片</a>
+    </div>
+
+
+        </div><!-- card -->
+      </div><!-- col -->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/coffee-2663552_1920.webp" class="card-img-top"
+            alt="Los Angeles Skyscrapers" />
+          <div class="card-body h-100">
+            <h5 class="card-title">虹吸式咖啡壺</h5>
+            <p class="card-text">
+              虹吸壺，也稱賽風壺，源於德國，通過加熱下壺氣體增加壓力將水虹吸至上壺萃取咖啡。這種沖泡方法在日本和台灣流行，但隨著手沖咖啡興起，虹吸壺逐漸不再是必需的咖啡器具。與其他沖泡方式相比，虹吸壺操作較為複雜。
+            </p>
+          </div>
+    <div class="card-body d-flex justify-content-end">
+        <a href="https://www.youtube.com/watch?v=M8M7NEHWqrk&ab_channel=ADCafe" class="btn btn-primary btn-lg me-2" role="button">參考影片</a>
+    </div>
+
+
+        </div><!-- card -->
+      </div><!-- col -->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/coffee-4334647.jpg" class="card-img-top" alt="Skyscrapers" />
+          <div class="card-body h-100">
+            <h5 class="card-title">濃縮咖啡</h5>
+            <p class="card-text">
+              義大利咖啡（Espresso）是一種將接近沸騰的高壓水強行通過細磨咖啡製作的飲料。相較其他方式，Espresso更濃厚，含有高濃度的懸浮和溶解固體，表層的咖啡脂。由加壓過程，Espresso味道強烈，常作為卡布奇諾、瑪琪朵、摩卡等飲品的基底。
+            </p>
+          </div>
+    <div class="card-body d-flex justify-content-end">
+        <a href="https://www.youtube.com/watch?v=fU1NJ7C9LZY&ab_channel=%E7%89%9B%E5%B0%8F%E5%92%96MumaMoo%28%E7%89%9B%E5%B0%8F%E5%92%96%29" class="btn btn-primary btn-lg me-2" role="button">參考影片</a>
+    </div>
+
+
+        </div><!-- card -->
+      </div><!-- col -->
+
+    </div><!-- row-cols -->
+  </div><!--Container -->
+
+<!-- === End card-grid ========================================================== -->
+
+
+
+
+
+<br>
+
+
+
+
+
+<!-- === 產地分布圖 ============================================================= -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="card shadow-5-strong mb-3">
+          <div class="row g-0">
+
+              <div class="col-md-4">
+                  <!-- bg-img -->
+                  <div class="bg-image hover-overlay ripple h-100" data-mdb-ripple-init data-mdb-ripple-color="light">
+                      <img class="img-fluid h-100 rounded" src="./img/872895.jpg" alt="提示文字">
+
+                      <!-- mask -->
+                      <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </a>
+                  </div><!-- bg-img -->
+              </div>
+
+              <div class="col-md-8">
+                  <div class="card-body">
+                      <h5 class="card-title">咖啡產地有什麼差別</h5>
+                      <p class="card-text">
+                        品種、產區、烘焙酸苦風味大不同<br>
+                        巴西：口感濃烈，有巧克力餘味。<br>
+                        中美洲、哥倫比亞：味道比較淡，平衡度好，低酸度，餘味有果香。<br>
+                        印尼：有泥土芳香或煙熏味，有苦可可餘味，醇度厚實。<br>
+                        衣索比亞：咖啡原產地，種類多樣性高。許多被形容有糖漿味，並有草莓或藍莓的餘味。<br>
+                        肯亞：味道厚實，帶點番茄酸味。<br>
+                      </p>
+                      <p class="card-text d-flex justify-content-start">
+                  </div>
+                  <div class="card-body d-flex justify-content-end">
+                    <a href="https://www.zhanlu.com.tw/%E5%92%96%E5%95%A1%E8%B1%86%E7%A8%AE%E9%A1%9E/?utm_source=tagtoo&utm_medium=pmax&utm_term=3499:470:12&gad_source=1" class="btn btn-primary btn-lg me-2" role="button">參考文章</a>
+                </div>
+              </div>
+
+          </div><!-- row -->
+      </div><!-- card -->
+    </div><!-- Row -->
+  </div><!--Container -->
+
+
+<!-- === End 產地分布圖 ========================================================== -->
+
+
+
+
+<br>
+
+
+
+
+
+<!-- === 咖啡烘焙 ============================================================= -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="card shadow-5-strong mb-3">
+    <div class="row g-0">
+
+        <div class="col-md-4">
+            <!-- bg-img -->
+            <div class="bg-image hover-overlay ripple h-100" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img class="img-fluid h-100 rounded" src="./img/beebc149-aebc-42f0-b70f-1a3577386951.png" alt="提示文字">
+
+                <!-- mask -->
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div><!-- bg-img -->
+        </div>
+
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">烘培過程</h5>
+                <p class="card-text">
+咖啡烘焙可分為以下四階段：
+<br>1. 脫水階段：生豆水分約10%-12%，入鍋後開始吸熱脫水。水分蒸發，豆色由綠變黃褐，味道由青草、穀麥轉為烤麵包味，即完成脫水。
+<br>2. 催化階段：脫水後進行化學反應，主要為梅納反應與焦糖化反應，產生芳香物質。梅納反應釋放香氣並使豆子上色，焦糖化反應使糖分分解產生香甜與苦味。
+<br>3. 一爆階段：溫度升高使糖分焦糖化，梅納反應加劇，產生大量氣體壓破細胞壁，發出爆裂聲，釋放芳香物質。
+<br>4. 二爆階段：細胞壁再次破裂，木質纖維揮發。焙度加深產生焦苦味，是否進入此階段取決於豆子風味與烘豆師喜好。
+
+                </p>
+                <p class="card-text d-flex justify-content-start">
+                </p>
+            </div>
+            <div class="card-body d-flex justify-content-end">
+              <a href="https://www.louisacoffee.co/blog1show/16" class="btn btn-primary btn-lg me-2" role="button">Button</a>
+          </div>
+        </div>
+
+    </div><!-- row -->
+</div><!-- card -->
+  </div><!-- Row -->
+</div><!--Container -->
+
+
+
+<!-- === End 咖啡烘焙 ========================================================== -->
+
+
+
+
+<br>
+
+
+
+
+
+<!-- === LightBox ============================================================= -->
+
+  <div class="lightbox" data-mdb-lightbox-init>
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="w-100 shadow-6-strong rounded" src="./img/coffee-563797_1920.jpg" data-mdb-img="./img/coffee-563797_1920.jpg" alt="圖片1" />
+      </div>
+
+      <div class="col-lg-4">
+        <img class="w-100 shadow-6-strong rounded" src="./img/coffee-4388065_1920.jpg" data-mdb-img="./img/coffee-4388065_1920.jpg" alt="圖片2" />
+      </div>
+
+      <div class="col-lg-4">
+        <img class="w-100 shadow-6-strong rounded" src="./img/coffee-5498486_1920 (自訂).jpg" data-mdb-img="./img/coffee-5498486_1920 (自訂).jpg" alt="圖片3" />
+      </div>
+
+    </div><!-- row -->
+  </div><!-- lightbox -->
+
+<!-- === End LightBox ========================================================== -->
+
+
+
+
+
+<br>
+
+
+
+
+
+  <!-- === footer ============================================================= -->
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="">
+
+  <footer class="text-center text-white" style="background-color: #3c1e1e;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/coffee-2562435_1920.jpg" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(255, 255, 255, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/ai-generated-8223836_1920.jpg" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/coffee-7870461_1920.jpg" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/coffee-3120750_1920.jpg" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/ai-generated-7795820_1920.jpg" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/ai-generated-8223835_1920.jpg" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(255, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://www.smvhs.kh.edu.tw/">smvhs.kh.edu.tw</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+  <!-- === End footer ========================================================== -->
+
+</body>
+
+<!-- MDB ESSENTIAL -->
+<script type="text/javascript" src="js/mdb.umd.min.js"></script>
+<!-- MDB PLUGINS -->
+<script type="text/javascript" src="plugins/js/all.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+
+</html>

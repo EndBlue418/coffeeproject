@@ -1,0 +1,9 @@
+.shadow-custom { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px
+10px 5px rgba(0, 0, 0, 0.05) !important; }
+
+.mask-custom {
+  backdrop-filter: contrast(125%) brightness(110%) saturate(135%) sepia(0%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
+  mix-blend-mode: normal;
+  background: rgba(0, 0, 0, 0.0);
+  opacity: 1;
+}
